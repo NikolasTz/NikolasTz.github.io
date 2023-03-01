@@ -17,16 +17,18 @@
   
      <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link href="css/index.css" rel="stylesheet" type="text/css" >
 </head>
 
 <body class="blue-grey darken-3">
 
-      <!-- Dropdown Structure -->
-      <ul id='dropdown1' class='dropdown-content'>
-        <li><a href="#!">LinkedIn</a></li>
-        <li><a href="#!">Github</a></li>
-        <li><a href="#!">Gmail</a></li>
-      </ul>
+    <!-- Dropdown Structure -->
+    <ul id='dropdown1' class='dropdown-content'>
+      <li><a href="#!">LinkedIn</a></li>
+      <li><a href="#!">Github</a></li>
+      <li><a href="#!">Gmail</a></li>
+    </ul>
     
     <div class="section blue-grey darken-2 z-depth-5">
       <p class="center-align"><i class="large material-icons circle responsive-img">account_circle</i></p>
@@ -36,68 +38,132 @@
       <p class="white-text center-align"><strong><i>Software Engineering</i></strong></p>
     </div>
 
-    <!--<blockquote>
-      This is an example quotation that uses the blockquote tag.
-    </blockquote>-->
-
+    
     <!-- Nav bar -->
     <nav>
-        <div class="nav-wrapper  blue-grey darken-2 z-depth-5">
+        <div class="nav-wrapper blue-grey darken-2 z-depth-5">
           <!-- <a href="#!" class="brand-logo">Nikolaos Tzimos</a> -->
-          <ul class="right hide-on-med-and-down">
+
+          <ul id="nav-mobile" class="left">
             
             <!--<li><a href="#!"><i class="material-icons">search</i></a></li>-->
-            <li><a class="white-text center" href="index.html">About me</a></li>
-            <li><a class="white-text center" href="projects.html">Projects</a></li>
+            <li><a class="white-text" href="index.html">About me</a></li>
+            <li><a class="white-text" href="projects.html">Projects</a></li>
 
              <!-- Dropdown Trigger -->
-            <li><a class="dropdown-trigger black-text" href="#!" data-target="dropdown1">Reach me</a></li>
-      
+            <li><a class="dropdown-trigger white-text" href="#!" data-target="dropdown1">Contact</a></li>
+
           </ul>
         </div>
     </nav>
       
 
-      <div class="container">
-        <div class="col s12 m12 l6">
-          <div class="card blue-grey darken-1 hoverable">
-            <div class="card-content white-text">
-              <span class="card-title">About me</span>
-              <p style="text-align: justify">
-                Graduate from the School of Electrical and Computer Engineering of <a target="_blank" href="#">Technical University of Crete.</a>
-                I received my diploma (5 year curriculum) under the supervision of <a target="_blank" href="#">Antonios Deligiannakis.</a><br>
+    <!-- About me -->
+    <div class="container">
+      <div class="col s12 m12 l6">
+        <div class="card blue-grey darken-1 hoverable">
+          <div class="card-content white-text">
+            <span class="card-title">About me</span>
+            <p style="text-align: justify">
+              <blockquote style="border-left: solid rgb(255, 255, 255); text-align: justify">Graduate from the School of Electrical and Computer Engineering of <a target="_blank" href="#">Technical University of Crete.</a>
+              I received my diploma (5 year curriculum) under the supervision of <a target="_blank" href="#">Antonios Deligiannakis.</a><br>
 
-                <br>
-                I am excited about streaming distributed systems and machine learning algorithms. 
-                The last two years, I am actively working on Database Management Systems(DBMS), Distributed Streaming Engines and Distributed Machine Learning.
-                The whole idea boils down to the trying to integrated the machine learning algorithms into distributed streaming systems 
-                so that we have the online version of machine learning algorithms.
-                My latest work is based on Bayesian Networks and a special case of this the Naive Bayes Classifier.
-                In particular, we focus on learning parameters of Bayesian Networks using the least communication cost under the umbrella of the continuos distributed model. 
-                We proposed an alternative approach using Functional Geometric Monitoring method to have the online maintenance of networks in distributed streaming systems.
-                For more information you can take a look in my <a target="_blank" href="#">CV.</a>
-              </p>
-            </div> 
+              <br>
+              I am excited about streaming distributed systems and machine learning algorithms. 
+              The last two years, I am actively working on Database Management Systems(DBMS), Distributed Streaming Engines and Distributed Machine Learning.
+              The whole idea boils down to the trying to integrated the machine learning algorithms into distributed streaming systems 
+              so that we have the online version of machine learning algorithms.
+              My latest work is based on Bayesian Networks and a special case of this the Naive Bayes Classifier.
+              In particular, we focus on learning parameters of Bayesian Networks using the least communication cost under the umbrella of the continuos distributed model. 
+              We proposed an alternative approach using Functional Geometric Monitoring method to have the online maintenance of networks in distributed streaming systems.
+              For more information you can take a look in my <a target="_blank" href="#">CV.</a>
+              </blockquote> 
+            </p>
+          </div> 
+        </div>  
+      </div>
+    </div>
+
+    <!-- Technical Skills -->
+    <div class="container">
+      <div class="col s12 m12 l4">
+        <div class="card blue-grey darken-1 hoverable">
+
+          <div class="card-image">
+            
+            <img class="materialboxed" src="images/flink.png"> 
+            <a class="right btn-floating halfway-fab waves-effect waves-light red modal-trigger" href="#modal1"><i class="material-icons">more_vert</i></a>
           </div>
+
+          <div class="card-content white-text">
+            <span class="card-title">My Technical Skills</span>
+            <p style="text-align: justify">
+              A bunch of test
+              <br>
+            </p>
+          </div> 
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal modal-fixed-footer">
+
+      <div class="modal-content blue-grey lighten-1">
+        <h5 class="white-text">[CCFD-RF] Credit Card Fraudulent Detection with Random Forest</h5>
+        <a class="white-text" target="_blank" href="https://github.com/vvittis/CCFD-RF"><strong><i>LINK</i></strong></a>
+        <br>
+
+        <div class="white-text" style="text-align: justify">
+          This is a project implementing a real-time fraud-detection system (FDS) for Credit Card Fraud Transactions using Adaptive Random Forest in Apache Spark platform. 
+          The increasing use of credit card in online transactions reflects the rise of a new, fast and easy way of interchange in modern world. 
+          Based on extensive data collected for online card payments in the United Kingdom, is expected that by 2026, the number of card payments per day will grow to 60 million.[1]
+          This new form of transaction involves the risk of fraudulent attacks and fishing attempts, therefore provokes the urgent need of developing fast and online FDS.
+          This project suggests a new system for detecting and monitoring online transactions using the latest Apache Spark processing engine, Structured Streaming, and implementing an Adaptive Ensemble Classification Method, Random Forest. 
+          Our goal is to design a learner, for extremely large datasets which do not fit in main memory, adapting to concept drift and evolving data. We show the effectiveness of our method on both synthetic and real world datasets and we manage to reach a 92% accuracy on average.
         </div>
 
-        <div class="col s12 m12 l6">
-          <div class="card blue-grey darken-1 hoverable">
-
-            <div class="card-image">
-              <img class="materialboxed" src="images/flink.png">
-              
-              <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
-            </div>
-
-            <div class="card-content white-text">
-              <span class="card-title">My Technical Skills</span>
-            </div> 
-          </div>
+        <br>
+        <div class="white-text">
+          <p class="center-align"> <strong>The basic architecture summarized in the below picture</strong></p>
+          <img class="materialboxed center" src="images/abstract_project_architecture.drawio.png">
         </div>
 
+        <br>
+        <div class="white-text">
+          <p style="text-align:center">
+            <strong>Technologies</strong> 
+            <br><br>
+            <img class="materialboxed center" src="images/technologies_2.drawio.png">
+          </p>
+        </div>
         
       </div>
+      
+      <div class="modal-footer blue-grey lighten-1">
+        <a href="#!" class="white-text modal-close waves-effect waves-green btn-flat">Close</a>
+      </div>
+
+    
+    </div>
+
+    <!-- Publications and News -->
+    <div class="container">
+      <div class="col s12 m12 l6">
+        <div class="card blue-grey darken-1 hoverable">
+          <div class="card-content white-text">
+            <span class="card-title">Publications and News</span>
+            <p style="text-align: justify">
+              A bunch of test
+              <br>
+            </p>
+          </div>  
+        </div> 
+      </div>
+    </div>
+
+
 
     <!-- Compiled and minified JavaScript -->
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
@@ -109,6 +175,8 @@
         $('.dropdown-trigger').dropdown({
           hover: true
         });
+
+        $('.modal').modal();
 
         $('.fixed-action-btn').floatingActionButton();
       });
@@ -125,7 +193,6 @@
         </p>
     </div>-->
 
-    
     <!--<div class="row">
         <div class="col l3">
           <div class="card hoverable">
@@ -144,8 +211,9 @@
         </div>
       </div>-->
 
+    <!-- Footer -->  
     <footer class="section">
-		<div class="center flow-text black-text text-darken-5">&copy; 2023 NIKOLAOS TZIMOS</div>
+		<div class="center flow-text white-text text-darken-5">&copy; 2023 Designed and builded by <strong>NIKOLAOS TZIMOS</strong> </div>
 	</footer>
 
 </body>
