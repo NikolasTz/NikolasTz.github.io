@@ -19,35 +19,116 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
-<body class="grey lighten-4">
+<body class="blue-grey darken-3">
+
+      <!-- Dropdown Structure -->
+      <ul id='dropdown1' class='dropdown-content'>
+        <li><a href="#!">LinkedIn</a></li>
+        <li><a href="#!">Github</a></li>
+        <li><a href="#!">Gmail</a></li>
+      </ul>
     
+    <div class="section blue-grey darken-2 z-depth-5">
+      <p class="center-align"><i class="large material-icons circle responsive-img">account_circle</i></p>
+      <!--<p class="center-align"><img src="images/flink.png" alt="" class="circle responsive-img"></p>-->
     
+      <p class="white-text center-align strong "><strong><i>Nikolaos Tzimos</i></strong></p>
+      <p class="white-text center-align"><strong><i>Software Engineering</i></strong></p>
+    </div>
+
+    <!--<blockquote>
+      This is an example quotation that uses the blockquote tag.
+    </blockquote>-->
+
     <!-- Nav bar -->
     <nav>
-        <div class="nav-wrapper  blue darken-2">
-          <a href="#!" class="brand-logo">Nikolaos Tzimos</a>
+        <div class="nav-wrapper  blue-grey darken-2 z-depth-5">
+          <!-- <a href="#!" class="brand-logo">Nikolaos Tzimos</a> -->
           <ul class="right hide-on-med-and-down">
-            <li><a href="#!"><i class="material-icons">search</i></a></li>
-            <li><a href="index.html">About me</a></li>
-            <li><a href="#!">Projects</a></li>
-            <li><a href="#!">Reach me</a></li>
+            
+            <!--<li><a href="#!"><i class="material-icons">search</i></a></li>-->
+            <li><a class="white-text center" href="index.html">About me</a></li>
+            <li><a class="white-text center" href="projects.html">Projects</a></li>
+
+             <!-- Dropdown Trigger -->
+            <li><a class="dropdown-trigger black-text" href="#!" data-target="dropdown1">Reach me</a></li>
+      
           </ul>
         </div>
-      </nav>
+    </nav>
+      
 
-    <div class="row">
+      <div class="container">
+        <div class="col s12 m12 l6">
+          <div class="card blue-grey darken-1 hoverable">
+            <div class="card-content white-text">
+              <span class="card-title">About me</span>
+              <p style="text-align: justify">
+                Graduate from the School of Electrical and Computer Engineering of <a target="_blank" href="#">Technical University of Crete.</a>
+                I received my diploma (5 year curriculum) under the supervision of <a target="_blank" href="#">Antonios Deligiannakis.</a><br>
+
+                <br>
+                I am excited about streaming distributed systems and machine learning algorithms. 
+                The last two years, I am actively working on Database Management Systems(DBMS), Distributed Streaming Engines and Distributed Machine Learning.
+                The whole idea boils down to the trying to integrated the machine learning algorithms into distributed streaming systems 
+                so that we have the online version of machine learning algorithms.
+                My latest work is based on Bayesian Networks and a special case of this the Naive Bayes Classifier.
+                In particular, we focus on learning parameters of Bayesian Networks using the least communication cost under the umbrella of the continuos distributed model. 
+                We proposed an alternative approach using Functional Geometric Monitoring method to have the online maintenance of networks in distributed streaming systems.
+                For more information you can take a look in my <a target="_blank" href="#">CV.</a>
+              </p>
+            </div> 
+          </div>
+        </div>
+
+        <div class="col s12 m12 l6">
+          <div class="card blue-grey darken-1 hoverable">
+
+            <div class="card-image">
+              <img class="materialboxed" src="images/flink.png">
+              
+              <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+            </div>
+
+            <div class="card-content white-text">
+              <span class="card-title">My Technical Skills</span>
+            </div> 
+          </div>
+        </div>
+
+        
+      </div>
+
+    <!-- Compiled and minified JavaScript -->
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('.materialboxed').materialbox();
+
+        $('.dropdown-trigger').dropdown({
+          hover: true
+        });
+
+        $('.fixed-action-btn').floatingActionButton();
+      });
+
+    </script>
+
+
+    <!--<div class="row">
         <h> Hello my name is Nikos Tzimos</h>
-        <p> Hello my name is Nikos Tzimos
+        <p class="flow-text"> Hello my name is Nikos Tzimos
             I currently working on scalable applications in continuos distributed model
             Last two years , I am working actively on distributed machine learning. 
             apple
         </p>
-    </div>
+    </div>-->
 
     
-    <div class="row">
+    <!--<div class="row">
         <div class="col l3">
-          <div class="card">
+          <div class="card hoverable">
             <div class="card-image">
               <img src="images/flink.png">
               <span class="card-title">Card Title</span>
@@ -61,7 +142,7 @@
               </div>
           </div>
         </div>
-      </div>
+      </div>-->
 
     <footer class="section">
 		<div class="center flow-text black-text text-darken-5">&copy; 2023 NIKOLAOS TZIMOS</div>
