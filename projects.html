@@ -2,9 +2,14 @@
 <html lang="en">
 
 <head>
+
+    <!-- Metadata -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My personal portfolio">
+    <meta name="author" content="Nikolaos Tzimos">
+    <meta name="keywords" content="Nikolaos,Tzimos,Distributed,Streaming,Algorithms,Machine Learning">
     <title>Nikos Tzimos</title>
 
     <!-- This gives the browser instructions on how to control the page's dimensions and scaling -->
@@ -17,180 +22,482 @@
      <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-
+    <!-- CSS -->
     <link href="css/index.css" rel="stylesheet" type="text/css" >
 
 </head>
 
 
+<body class="blue-grey darken-3">
 
-<body class="grey lighten-4">
-
-      <!-- Nav bar -->
-      <nav>
-          <div class="nav-wrapper  grey lighten-4 z-depth-5">
-            <ul class="black-text">
-              <li><a class="black-text" href="index.html">About me</a></li>
-              <li><a class="black-text" href="#!">Projects</a></li>
-            </ul>
-          </div>
-      </nav>
-
-      <!-- Project 1 -->
-      <div class="container">
-          <!-- <div class="col l3"> -->
-          <div class="card hoverable">
-              
-            <div class="card-image">
-              
-              <!--<img src="images/flink.png">-->
-              <!-- <span class="card-title">Card Title</span> -->
-              <a class="btn-floating halfway-fab waves-effect waves-light red modal-trigger" href="#modal1"><i class="material-icons">add</i></a>
-            </div>
-
-            <div class="card-content blue-grey darken-1">
-              <p class="center-align white-text">Distributed and online maintenance of Bayesian Networks in Apache Flink</p>
-            </div>
-
-            <div class="card-tabs">
-              <ul class="white tabs tabs-fixed-width blue-grey darken-1 z-depth-1">
-                <li class="tab"><a class="white-text active"  href="#d1">Description</a></li>
-                <li class="tab"><a class="white-text" href="#a1">Architecture</a></li>
-                <li class="tab"><a class="white-text" href="#t1">Technologies</a></li>
-              </ul>
-            </div>
-            <div class="white text card-content blue-grey darken-1">
-              <div class="white-text" id="d1">Test 1</div>
-              <div class="white-text"id="a1">
-                <p class="center-align white-text"> The basic architecture summarized in the below picture</p>
-                <img class="center materialboxed" src="images/abstract_project_architecture.drawio.png">
-              </div>
-              <div class="white-text" id="t1">
-                <p style="text-align:center"><img class="center materialboxed" src="images/technologies.drawio.png"></p>
-              </div>
-            </div>
-
-            <!--<div class="card-action">
-                <a href="#">This is a link</a>
-            </div>-->
-          </div>
-      </div>
-        
-      <!-- Modal Structure -->
-      <div id="modal1" class="modal modal-fixed-footer">
-
-        <div class="modal-content">
-          <h5>Distributed and online maintenance of Bayesian Networks in Apache Flink</h5>
-          <a target="_blank" href="https://github.com/NikolasTz/flink_bayesian_networks_monitoring">LINK</a>
-          <br>
-          <p>A bunch of text</p>
-          <img src="images/flink.png">
+    <!-- Nav bar -->
+    <nav>
+        <div class="nav-wrapper  blue-grey darken-2 z-depth-5">
+          <ul>
+            <li><a class="white-text" href="index.html">About me</a></li>
+            <li><a class="white-text" href="#!">Projects</a></li>
+          </ul>
         </div>
-        
-        <div class="modal-footer">
-          <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
-        </div>
+    </nav>
 
-      
-      </div>
+    <!-- Empty row -->
+    <div class="row"></div> 
 
-      <!-- Project 2 -->
-      <div class="container">
-          <!-- <div class="col l3"> -->
-          <div class="card hoverable">
-              
-            <div class="card-image">
-              
-              <!--<img src="images/flink.png">-->
-              <!-- <span class="card-title">Card Title</span> -->
-            </div>
 
-            <div class="card-content blue-grey darken-1">
-              <a class="right btn-floating halfway-fab waves-effect waves-light red modal-trigger" href="#modal2"><i class="material-icons">more_vert</i></a>
-              <p class="center-align white-text">[CCFD-RF] Credit Card Fraudulent Detection with Random Forest</p>
-              
-            </div>
+    <!-- Project 1 -->
+    <div class="container">
+        <div class="card hoverable">
+            
+          <!-- Card image -->
+          <!-- <div class="card-image">
+            
+            <img src="images/flink.png">
+            <span class="card-title">Card Title</span>
+            <a class="btn-floating halfway-fab waves-effect waves-light red modal-trigger" href="#modal1"><i class="material-icons">add</i></a>
+          </div> -->
 
-            <div class="card-tabs">
-          
-              <ul class="white tabs tabs-fixed-width blue-grey darken-1 z-depth-1">
-                <li class="tab"><a class="white-text active"  href="#d2">Description</a></li>
-                <li class="tab"><a class="white-text" href="#a2">Architecture</a></li>
-                <li class="tab"><a class="white-text" href="#t2">Technologies</a></li>
-              </ul>
-            </div>
-            <div class="white text card-content blue-grey darken-1">
-
-              <div class="white-text" id="d2" style="text-align: justify">
-                  This is a project implementing a real-time fraud-detection system (FDS) for Credit Card Fraud Transactions using Adaptive Random Forest in Apache Spark platform.
-                  The increasing use of credit card in online transactions reflects the rise of a new, fast and easy way of interchange in modern world. 
-                  Based on extensive data collected for online card payments in the United Kingdom, is expected that by 2026, the number of card payments per day will grow to 60 million.[1] 
-                  This new form of transaction involves the risk of fraudulent attacks and fishing attempts, therefore provokes the urgent need of developing fast and online FDS.
-                  This project suggests a new system for detecting and monitoring online transactions using the latest Apache Spark processing engine, Structured Streaming, and implementing an Adaptive Ensemble Classification Method, Random Forest. 
-                  Our goal is to design a learner, for extremely large datasets which do not fit in main memory, adapting to concept drift and evolving data. We show the effectiveness of our method on both synthetic and real world datasets and we manage to reach a 92% accuracy on average.
-              </div>
-              
-              <div class="white-text" id="a2">
-                <p class="center-align white-text"> The basic architecture summarized in the below picture</p>
-                <img class="center materialboxed" src="images/abstract_project_architecture.drawio.png">
-              </div>
-              
-              <div class="white-text" id="t2">
-                <p style="text-align:center"><img class="center materialboxed" src="images/technologies_2.drawio.png"></p>
-              </div>
-
-            </div>
-
-          </div>
-      </div>
-        
-      <!-- Modal Structure -->
-      <div id="modal2" class="modal modal-fixed-footer">
-
-        <div class="modal-content">
-          <h5>[CCFD-RF] Credit Card Fraudulent Detection with Random Forest</h5>
-          <a target="_blank" href="https://github.com/vvittis/CCFD-RF">LINK</a>
-          <br>
-
-          <div class="black-text" style="text-align: justify">
-            This is a project implementing a real-time fraud-detection system (FDS) for Credit Card Fraud Transactions using Adaptive Random Forest in Apache Spark platform. 
-            The increasing use of credit card in online transactions reflects the rise of a new, fast and easy way of interchange in modern world. 
-            Based on extensive data collected for online card payments in the United Kingdom, is expected that by 2026, the number of card payments per day will grow to 60 million.[1]
-            This new form of transaction involves the risk of fraudulent attacks and fishing attempts, therefore provokes the urgent need of developing fast and online FDS.
-            This project suggests a new system for detecting and monitoring online transactions using the latest Apache Spark processing engine, Structured Streaming, and implementing an Adaptive Ensemble Classification Method, Random Forest. 
-            Our goal is to design a learner, for extremely large datasets which do not fit in main memory, adapting to concept drift and evolving data. We show the effectiveness of our method on both synthetic and real world datasets and we manage to reach a 92% accuracy on average.
-          </div>
-
-          <br>
-          <div class="black-text">
-            <p class="center-align"> <strong>The basic architecture summarized in the below picture</strong></p>
-            <img class="center" src="images/abstract_project_architecture.drawio.png">
-          </div>
-
-          <br>
-          <div class="black-text">
-            <p style="text-align:center">
-              <strong>Technologies</strong> 
-              <img class="center" src="images/technologies_2.drawio.png">
+          <!-- Card content -->
+          <div class="card-content blue-grey darken-1">
+            <p class="center-align white-text"><strong>Distributed and online maintenance of Bayesian Networks in Apache Flink</strong>
+              <a class="modal-trigger" href="#modal1"><i class="material-icons right white-text">arrow_drop_down_circle</i></a>
             </p>
           </div>
-          
-        </div>
-        
-        <div class="modal-footer">
-          <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
-        </div>
 
-      
-      </div>
+          <!-- Tabs -->
+          <div class="card-tabs">
+            <ul class="white tabs tabs-fixed-width blue-grey darken-1 z-depth-1">
+              <li class="tab"><a class="white-text active"  href="#d1">Description</a></li>
+              <li class="tab"><a class="white-text" href="#a1">Architecture</a></li>
+              <li class="tab"><a class="white-text" href="#t1">Technologies</a></li>
+            </ul>
+          </div>
 
-        
-    <div class="container">
-      <div class="card-panel hoverable blue-grey darken-1">
-        <p style="text-align: justify">Distributed and online maintenance of Bayesian Networks in Apache Flink</p>
-      </div>
-      <p style="text-align: justify">Distributed and online maintenance of Bayesian Networks in Apache Flink</p>
+          <!-- Content of tabs -->
+          <div class="white text card-content blue-grey darken-1">
+            <div class="white-text" id="d1">A bunch of text</div>
+            <div class="white-text"id="a1">
+              
+              <p class="center-align white-text">The basic architecture summarized in the below picture <br><br> </p>
+              <img class="center" src="images/abstract_project_architecture.drawio.png">
+            </div>
+            <div class="white-text" id="t1">
+              <p style="text-align:center"><img class="center" src="images/technologies.drawio.png"></p>
+            </div>
+          </div>
+
+          <!--<div class="card-action">
+              <a href="#">This is a link</a>
+          </div>-->
+
+        </div>
     </div>
+      
+    <!-- Modal Structure of Project 1 -->
+    <div id="modal1" class="modal modal-fixed-footer">
+
+      <div class="modal-content">
+
+        <h5>Distributed and online maintenance of Bayesian Networks in Apache Flink</h5>
+        <a target="_blank" href="https://github.com/NikolasTz/flink_bayesian_networks_monitoring">LINK</a> /
+        <a target="_blank" href="https://github.com/NikolasTz/flink_bayesian_networks_monitoring">PDF</a>
+        <br>
+
+        <div class="black-text" style="text-align: justify">
+          This is a project implementing a real-time fraud-detection system (FDS) for Credit Card Fraud Transactions using Adaptive Random Forest in Apache Spark platform. 
+          The increasing use of credit card in online transactions reflects the rise of a new, fast and easy way of interchange in modern world. 
+          Based on extensive data collected for online card payments in the United Kingdom, is expected that by 2026, the number of card payments per day will grow to 60 million.[1]
+          This new form of transaction involves the risk of fraudulent attacks and fishing attempts, therefore provokes the urgent need of developing fast and online FDS.
+          This project suggests a new system for detecting and monitoring online transactions using the latest Apache Spark processing engine, Structured Streaming, and implementing an Adaptive Ensemble Classification Method, Random Forest. 
+          Our goal is to design a learner, for extremely large datasets which do not fit in main memory, adapting to concept drift and evolving data. We show the effectiveness of our method on both synthetic and real world datasets and we manage to reach a 92% accuracy on average.
+        </div>
+
+        <br><hr class="style-two">
+        <div class="black-text">
+          <p class="center-align"> <strong>The basic architecture summarized in the below picture</strong><br><br></p>
+          <img class="center" src="images/abstract_project_architecture.drawio.png">
+        </div>
+
+        <br><hr class="style-two">
+        <div class="black-text">
+          <p style="text-align:center">
+            <strong>Technologies</strong> 
+            <br><br>
+            <img class="center" src="images/technologies.drawio.png">
+          </p>
+        </div>
+
+      </div>
+      
+      <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+      </div>
+
+    </div>
+
+
+    <!-- Project 2 -->
+    <div class="container">
+        <div class="card hoverable">
+          
+          <!-- Card image -->
+          <!--<div class="card-image">
+            
+            <img src="images/flink.png">
+            <span class="card-title">Card Title</span>
+          </div>-->
+
+          <!-- Card content -->
+          <div class="card-content blue-grey darken-1">
+            <p class="center-align white-text">
+              <strong>[CCFD-RF] Credit Card Fraudulent Detection with Random Forest</strong>
+              <a class="modal-trigger" href="#modal2"><i class="material-icons right white-text">arrow_drop_down_circle</i></a>
+            </p>
+            
+            
+          </div>
+
+          <!-- Tabs -->
+          <div class="card-tabs">
+        
+            <ul class="white tabs tabs-fixed-width blue-grey darken-1 z-depth-1">
+              <li class="tab"><a class="white-text active"  href="#d2">Description</a></li>
+              <li class="tab"><a class="white-text" href="#a2">Architecture</a></li>
+              <li class="tab"><a class="white-text" href="#t2">Technologies</a></li>
+            </ul>
+          </div>
+
+          <!-- Content of tabs -->
+          <div class="white text card-content blue-grey darken-1">
+
+            <div class="white-text" id="d2" style="text-align: justify">
+                This is a project implementing a real-time fraud-detection system (FDS) for Credit Card Fraud Transactions using Adaptive Random Forest in Apache Spark platform.
+                The increasing use of credit card in online transactions reflects the rise of a new, fast and easy way of interchange in modern world. 
+                Based on extensive data collected for online card payments in the United Kingdom, is expected that by 2026, the number of card payments per day will grow to 60 million.[1] 
+                This new form of transaction involves the risk of fraudulent attacks and fishing attempts, therefore provokes the urgent need of developing fast and online FDS.
+                This project suggests a new system for detecting and monitoring online transactions using the latest Apache Spark processing engine, Structured Streaming, and implementing an Adaptive Ensemble Classification Method, Random Forest. 
+                Our goal is to design a learner, for extremely large datasets which do not fit in main memory, adapting to concept drift and evolving data. We show the effectiveness of our method on both synthetic and real world datasets and we manage to reach a 92% accuracy on average.
+            </div>
+            
+            <div class="white-text" id="a2">
+              <p class="center-align white-text"> The basic architecture summarized in the below picture <br><br></p>
+              <img class="center" src="images/abstract_project_architecture.drawio.png">
+            </div>
+            
+            <div class="white-text" id="t2">
+              <p style="text-align:center"><img class="center" src="images/technologies_2.drawio.png"></p>
+            </div>
+
+          </div>
+
+        </div>
+    </div>
+      
+    <!-- Modal Structure of Project 2 -->
+    <div id="modal2" class="modal modal-fixed-footer">
+
+      <div class="modal-content">
+        
+        <h5>[CCFD-RF] Credit Card Fraudulent Detection with Random Forest</h5>
+        <a target="_blank" href="https://github.com/vvittis/CCFD-RF">LINK</a>
+        <br>
+
+        <div class="black-text" style="text-align: justify">
+          This is a project implementing a real-time fraud-detection system (FDS) for Credit Card Fraud Transactions using Adaptive Random Forest in Apache Spark platform. 
+          The increasing use of credit card in online transactions reflects the rise of a new, fast and easy way of interchange in modern world. 
+          Based on extensive data collected for online card payments in the United Kingdom, is expected that by 2026, the number of card payments per day will grow to 60 million.[1]
+          This new form of transaction involves the risk of fraudulent attacks and fishing attempts, therefore provokes the urgent need of developing fast and online FDS.
+          This project suggests a new system for detecting and monitoring online transactions using the latest Apache Spark processing engine, Structured Streaming, and implementing an Adaptive Ensemble Classification Method, Random Forest. 
+          Our goal is to design a learner, for extremely large datasets which do not fit in main memory, adapting to concept drift and evolving data. We show the effectiveness of our method on both synthetic and real world datasets and we manage to reach a 92% accuracy on average.
+        </div>
+
+        <br><hr class="style-two">
+        <div class="black-text">
+          <p class="center-align"> <strong>The basic architecture summarized in the below picture</strong><br><br></p>
+          <img class="center" src="images/abstract_project_architecture.drawio.png">
+        </div>
+
+        <br><hr class="style-two">
+        <div class="black-text">
+          <p style="text-align:center">
+            <strong>Technologies</strong> 
+            <br><br>
+            <img class="center" src="images/technologies_2.drawio.png">
+          </p>
+        </div>
+        
+      </div>
+      
+      <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+      </div>
+
+    
+    </div>
+
+
+    <!-- Project 3 -->
+    <div class="container">
+      <div class="card hoverable">
+          
+        <!-- Card image -->
+        <!-- <div class="card-image">
+          
+          <img src="images/flink.png">
+          <span class="card-title">Card Title</span>
+          <a class="btn-floating halfway-fab waves-effect waves-light red modal-trigger" href="#modal1"><i class="material-icons">add</i></a>
+        </div> -->
+
+        <!-- Card content -->
+        <div class="card-content blue-grey darken-1">
+          <p class="center-align white-text"><strong>Random Sampling for Group-By Queries in Flink</strong>
+            <a class="modal-trigger" href="#modal3"><i class="material-icons right white-text">arrow_drop_down_circle</i></a>
+          </p>
+        </div>
+
+        <!-- Tabs -->
+        <div class="card-tabs">
+          <ul class="white tabs tabs-fixed-width blue-grey darken-1 z-depth-1">
+            <li class="tab"><a class="white-text active"  href="#d3">Description</a></li>
+            <li class="tab"><a class="white-text" href="#a3">Architecture</a></li>
+            <li class="tab"><a class="white-text" href="#t3">Technologies</a></li>
+          </ul>
+        </div>
+
+        <!-- Content of tabs -->
+        <div class="white text card-content blue-grey darken-1">
+          <div class="white-text" id="d3">A bunch of text</div>
+          <div class="white-text"id="a3">
+            
+            <p class="center-align white-text">The basic architecture summarized in the below picture <br><br> </p>
+            <img class="center" src="images/sampling.png">
+          </div>
+          <div class="white-text" id="t3">
+            <p style="text-align:center"><img class="center" src="images/technologies_sampling.drawio.png"></p>
+          </div>
+        </div>
+
+        <!--<div class="card-action">
+            <a href="#">This is a link</a>
+        </div>-->
+
+      </div>
+    </div>
+        
+    <!-- Modal Structure of Project 3 -->
+    <div id="modal3" class="modal modal-fixed-footer">
+
+      <div class="modal-content">
+
+        <h5>Random Sampling for Group-By Queries in Flink</h5>
+        <a target="_blank" href="#!">LINK</a> /
+        <a target="_blank" href="#!">PDF</a>
+        <br>
+
+        <div class="black-text" style="text-align: justify">
+          A bunch of text
+        </div>
+
+        <br><hr class="style-two">
+        <div class="black-text">
+          <p class="center-align"> <strong>The basic architecture summarized in the below picture</strong><br><br></p>
+          <img class="center" src="images/architecture_sampling.drawio.png">
+        </div>
+
+        <br><hr class="style-two">
+        <div class="black-text">
+          <p style="text-align:center">
+            <strong>Technologies</strong> 
+            <br><br>
+            <img class="center" src="images/technologies_sampling.drawio.png">
+          </p>
+        </div>
+
+      </div>
+      
+      <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+      </div>
+
+    </div>
+
+
+    <!-- Project 4 -->
+    <div class="container">
+      <div class="card hoverable">
+          
+        <!-- Card image -->
+        <!-- <div class="card-image">
+          
+          <img src="images/flink.png">
+          <span class="card-title">Card Title</span>
+          <a class="btn-floating halfway-fab waves-effect waves-light red modal-trigger" href="#modal1"><i class="material-icons">add</i></a>
+        </div> -->
+
+        <!-- Card content -->
+        <div class="card-content blue-grey darken-1">
+          <p class="center-align white-text"><strong>A CinemaOwner App in Docker environment</strong>
+            <a class="modal-trigger" href="#modal4"><i class="material-icons right white-text">arrow_drop_down_circle</i></a>
+          </p>
+        </div>
+
+        <!-- Tabs -->
+        <div class="card-tabs">
+          <ul class="white tabs tabs-fixed-width blue-grey darken-1 z-depth-1">
+            <li class="tab"><a class="white-text active"  href="#d4">Description</a></li>
+            <li class="tab"><a class="white-text" href="#a4">Architecture</a></li>
+            <li class="tab"><a class="white-text" href="#t4">Technologies</a></li>
+          </ul>
+        </div>
+
+        <!-- Content of tabs -->
+        <div class="white text card-content blue-grey darken-1">
+          <div class="white-text" id="d4">A bunch of text</div>
+          <div class="white-text"id="a4">
+            
+            <p class="center-align white-text">The basic architecture summarized in the below picture <br><br> </p>
+            <img class="center" src="images/sampling.png">
+          </div>
+          <div class="white-text" id="t4">
+            <p style="text-align:center"><img class="center" src="images/technologies_sampling.drawio.png"></p>
+          </div>
+        </div>
+
+        <!--<div class="card-action">
+            <a href="#">This is a link</a>
+        </div>-->
+
+      </div>
+    </div>
+        
+    <!-- Modal Structure of Project 4 -->
+    <div id="modal4" class="modal modal-fixed-footer">
+
+      <div class="modal-content">
+
+        <h5>A CinemaOwner App in Docker environment</h5>
+        <a target="_blank" href="#!">LINK</a> /
+        <a target="_blank" href="#!">PDF</a>
+        <br>
+
+        <div class="black-text" style="text-align: justify">
+          A bunch of text
+        </div>
+
+        <br><hr class="style-two">
+        <div class="black-text">
+          <p class="center-align"> <strong>The basic architecture summarized in the below picture</strong><br><br></p>
+          <img class="center" src="images/architecture_sampling.drawio.png">
+        </div>
+
+        <br><hr class="style-two">
+        <div class="black-text">
+          <p style="text-align:center">
+            <strong>Technologies</strong> 
+            <br><br>
+            <img class="center" src="images/technologies_sampling.drawio.png">
+          </p>
+        </div>
+
+      </div>
+      
+      <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+      </div>
+
+    </div>
+
+
+    <!-- Project 5 -->
+    <div class="container">
+      <div class="card hoverable">
+          
+        <!-- Card image -->
+        <!-- <div class="card-image">
+          
+          <img src="images/flink.png">
+          <span class="card-title">Card Title</span>
+          <a class="btn-floating halfway-fab waves-effect waves-light red modal-trigger" href="#modal1"><i class="material-icons">add</i></a>
+        </div> -->
+
+        <!-- Card content -->
+        <div class="card-content blue-grey darken-1">
+          <p class="center-align white-text"><strong>Searching and Genetic Algorithms</strong>
+            <a class="modal-trigger" href="#modal5"><i class="material-icons right white-text">arrow_drop_down_circle</i></a>
+          </p>
+        </div>
+
+        <!-- Tabs -->
+        <div class="card-tabs">
+          <ul class="white tabs tabs-fixed-width blue-grey darken-1 z-depth-1">
+            <li class="tab"><a class="white-text active"  href="#d5">Description</a></li>
+            <li class="tab"><a class="white-text" href="#a5">Architecture</a></li>
+            <li class="tab"><a class="white-text" href="#t5">Technologies</a></li>
+          </ul>
+        </div>
+
+        <!-- Content of tabs -->
+        <div class="white text card-content blue-grey darken-1">
+          <div class="white-text" id="d5">A bunch of text</div>
+          <div class="white-text"id="a5">
+            
+            <p class="center-align white-text">The basic architecture summarized in the below picture <br><br> </p>
+            <img class="center" src="images/sampling.png">
+          </div>
+          <div class="white-text" id="t5">
+            <p style="text-align:center"><img class="center" src="images/technologies_sampling.drawio.png"></p>
+          </div>
+        </div>
+
+        <!--<div class="card-action">
+            <a href="#">This is a link</a>
+        </div>-->
+
+      </div>
+    </div>
+        
+    <!-- Modal Structure of Project 5 -->
+    <div id="modal5" class="modal modal-fixed-footer">
+
+      <div class="modal-content">
+
+        <h5>Searching and Genetic Algorithms</h5>
+        <a target="_blank" href="#!">LINK</a> /
+        <a target="_blank" href="#!">PDF</a>
+        <br>
+
+        <div class="black-text" style="text-align: justify">
+          A bunch of text
+        </div>
+
+        <br><hr class="style-two">
+        <div class="black-text">
+          <p class="center-align"> <strong>The basic architecture summarized in the below picture</strong><br><br></p>
+          <img class="center" src="images/architecture_sampling.drawio.png">
+        </div>
+
+        <br><hr class="style-two">
+        <div class="black-text">
+          <p style="text-align:center">
+            <strong>Technologies</strong> 
+            <br><br>
+            <img class="center" src="images/technologies_sampling.drawio.png">
+          </p>
+        </div>
+
+      </div>
+      
+      <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+      </div>
+
+    </div>
+
+    
+    <!-- Footer -->  
+    <footer class="section">
+      <div class="center flow-text white-text text-darken-5">&copy; 2023 Designed and builded by <strong>NIKOLAOS TZIMOS</strong> </div>
+    </footer>
+
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
