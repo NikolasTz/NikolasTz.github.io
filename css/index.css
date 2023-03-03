@@ -1,0 +1,22 @@
+/*Style for Tabs*/
+
+/*Background and text color when a tab is active*/
+.tabs .tab a:focus.active  {
+  background-color:#78909c;
+} 
+
+/*Color of underline*/
+.tabs .indicator {
+  background-color: #ffffff;	/*#000000;*/
+} 
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.nav-wrapper{
+  background-color: rgba(255, 255, 255, 0.4) !important;
+}
