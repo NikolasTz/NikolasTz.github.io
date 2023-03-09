@@ -3992,7 +3992,7 @@ input[type="button"].btn--primary:focus {
     z-index: 1;
     content: "";
     display: block;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgb(255 255 255 / 6%);
     opacity: 0;
     visibility: hidden;
     position: absolute;
@@ -4008,7 +4008,7 @@ input[type="button"].btn--primary:focus {
 
 .folio-item__thumb::after {
     z-index: 1;
-    content: "...";
+    content: "";
     font-family: var(--font-2);
     font-weight: 300;
     font-size: 3rem;
@@ -4070,7 +4070,7 @@ input[type="button"].btn--primary:focus {
 }
 
 .modal-popup img {
-    margin-bottom: var(--vspace-0_5);
+    /* margin-bottom: var(--vspace-0_5); */
 }
 
 .modal-popup h5 {
